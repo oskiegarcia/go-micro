@@ -12,6 +12,18 @@ go install github.com/micro/micro/v3/cmd/protoc-gen-micro@latest
 micro server
 ```
 
+## How to list services
+```shell
+micro services
+```
+
+### micro dashboard
+```shell
+micro web
+```
+and then open http://localhost:8082/
+
+
 ## Examples
 ### Helloworld
 https://github.com/micro/services/tree/master/helloworld

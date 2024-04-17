@@ -4,15 +4,26 @@ Just saying hello world
 
 Helloworld simply returns a personalized message in response to a name. Use it for testing purposes.
 
+## How to build
+```shell
+make build
+```
+
+
 ## How to run
 ```shell
 ./helloworld-srv --proxy_address=127.0.0.1:8081 --auth_id admin --auth_secret micro
 ```
 
-## How to list services
+or 
 ```shell
-micro services
+make run
 ```
+## How to show logs
+```shell
+micro logs helloworld
+```
+
 
 ## How to invoke
 ```shell
@@ -28,9 +39,3 @@ curl "http://localhost:8080/helloworld/Call?name=Oscar"
 micro kill helloworld
 ```
 
-### micro dashboard
-```shell
-micro web
-```
-
-http://localhost:8082/
