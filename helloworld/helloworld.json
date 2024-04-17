@@ -1,0 +1,56 @@
+{
+  "openapi": "3.0.1",
+  "components": {
+    "schemas": {
+      "helloworld.CallRequest": {
+        "description": "Return a personalised Hello message",
+        "properties": {
+          "name": {
+            "description": "name to append to the message e.g Alice",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "helloworld.CallResponse": {
+        "properties": {
+          "message": {
+            "description": "message including name e.g Hello Alice",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "helloworld.StreamRequest": {
+        "description": "Stream a personalised Hello message",
+        "properties": {
+          "messages": {
+            "description": "the number of messages to send back",
+            "format": "int64",
+            "type": "integer",
+            "x-kubernetes-int-or-string": true
+          },
+          "name": {
+            "description": "name to append to the message e.g Alice",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "helloworld.StreamResponse": {
+        "properties": {
+          "message": {
+            "description": "message including name e.g Hello Alice",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    }
+  },
+  "info": {
+    "title": "OpenAPI Spec for Solo APIs.",
+    "version": "helloworld"
+  },
+  "paths": null
+}
