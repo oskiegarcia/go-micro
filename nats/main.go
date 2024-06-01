@@ -89,7 +89,7 @@ func consumer(ctx context.Context, cfg config) {
 	}
 	defer nc.Close()
 
-	fmt.Printf("Connected to NATS server on port %s\n", cfg.Port)
+	fmt.Printf("Connected to NATS server on port %d\n", cfg.Port)
 
 	messages := make(chan *nats.Msg, 1000)
 
@@ -123,7 +123,7 @@ func main() {
 	cfg := config{
 		ServerName: "local_nats_server",
 		Host:       "localhost",
-		Port:       15000,
+		Port:       4222,
 		Subject:    "example.logs",
 	}
 
