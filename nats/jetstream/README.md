@@ -58,3 +58,8 @@ Once you are done testing, remove the CA from your local system trust store:
 ```shell
 make cleanup
 ```
+
+## Other references
+- https://hackmd.io/@sofianhw/message-broker
+- https://github.com/sofianhw/go-jetstream-order/blob/main/update-status/main.go
+
