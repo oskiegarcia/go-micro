@@ -23,6 +23,15 @@ Spin up the cluster with:
 ```shell
 docker-compose up
 ```
+Note: Use client/client.go to run on this single instance.
+
+or
+
+```shell
+docker run -p 4222:4222 nats -js
+```
+Note: Use client2/client.go to run on this single instance.
+
 
 Run the client with:
 ```shell
